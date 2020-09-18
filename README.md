@@ -7,7 +7,7 @@ Run `npm install`.
 
 ## Run
 
-Run project with `npm run start`.
+Run project with `npm run start` and navigate to http://localhost:8080.
 
 ## Build
 
