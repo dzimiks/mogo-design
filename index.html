@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/icons/favicon.png">
+
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="vendors/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Leaflet CSS-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+
+  <title>MoGo</title>
+</head>
+<body>
+  <!-- Back to top button -->
+  <a id="back-to-top" href="#">
+    <i class="mdi mdi-chevron-up"></i>
+  </a>
+
+  <!-- Header -->
+  <header class="header" id="home">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__header">
+          <a class="navbar__brand" href="/">MoGo</a>
+        </div>
+
+        <div class="navbar__content">
+          <ul class="navbar__nav navbar__nav--closed">
+            <li class="navbar__link navbar__link--active">
+              <a href="#home">Home</a>
+            </li>
+
+            <li class="navbar__link">
+              <a href="#about">About</a>
+            </li>
+
+            <li class="navbar__link">
+              <a href="#services">Service</a>
+            </li>
+
+            <li class="navbar__link">
+              <a href="#our-team">Our Team</a>
+            </li>
+
+            <li class="navbar__link">
+              <a href="#portfolio">Work</a>
+            </li>
+
+            <li class="navbar__link">
+              <a href="#blog">Blog</a>
+            </li>
+          </ul>
+
+          <div class="navbar__icon-box">
+            <a href="#"><i id="navbar__toggler" class="mdi mdi-menu navbar__icon"></i></a>
+            <a href="#"><i class="mdi mdi-cart-outline navbar__icon"></i></a>
+            <a href="#"><i class="mdi mdi-magnify navbar__icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="carousel__item">
+          <h2 class="carousel__title">
+            <span class="carousel__subtitle">Creative Template</span>
+            Welcome <br>to Mogo
+          </h2>
+
+          <button class="btn-learn-more">
+            <a href="#">Learn more</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Indicators -->
+      <ol class="carousel__indicators">
+        <li class="carousel__indicators__item carousel__indicators__item--active">
+          <div class="carousel__indicators__inner">
+            <span class="carousel__indicators__number">01</span> intro
+          </div>
+        </li>
+
+        <li class="carousel__indicators__item">
+          <div class="carousel__indicators__inner">
+            <span class="carousel__indicators__number">02</span> work
+          </div>
+        </li>
+
+        <li class="carousel__indicators__item">
+          <div class="carousel__indicators__inner">
+            <span class="carousel__indicators__number">03</span> about
+          </div>
+        </li>
+
+        <li class="carousel__indicators__item">
+          <div class="carousel__indicators__inner">
+            <span class="carousel__indicators__number">04</span> contacts
+          </div>
+        </li>
+      </ol>
+    </section>
+  </header>
+
+  <!-- Story About Us -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title">
+        <span class="section__subtitle">What we do</span>
+        Story about us
+      </h2>
+      <p class="section__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+
+      <div class="section__content">
+        <div class="section__item">
+          <div class="overlay__wrapper">
+            <div class="overlay">
+                <span class="overlay__content">
+                  <i class="mdi mdi-account-multiple overlay__icon"></i>
+                  super team
+                </span>
+              <img src="assets/images/story/img-1.jpg" alt="Mogo">
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item">
+          <div class="overlay__wrapper">
+            <div class="overlay">
+                <span class="overlay__content">
+                  <i class="mdi mdi-image-filter-center-focus-weak overlay__icon"></i>
+                  Creativity
+                </span>
+              <img src="assets/images/story/img-2.jpg" alt="Mogo">
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item">
+          <div class="overlay__wrapper">
+            <div class="overlay">
+                <span class="overlay__content">
+                  <i class="mdi mdi-apple-airplay overlay__icon"></i>
+                  Digital
+                </span>
+              <img src="assets/images/story/img-3.jpg" alt="Mogo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Counting -->
+  <section class="section section-counting">
+    <div class="container">
+      <div class="flex-row vertical-stretch">
+        <div class="section-counting__item">
+          <div class="section-counting__number">42</div>
+          <div class="section-counting__text">Web Design Projects</div>
+        </div>
+
+        <div class="section-counting__item">
+          <div class="section-counting__number">123</div>
+          <div class="section-counting__text">happy client</div>
+        </div>
+
+        <div class="section-counting__item">
+          <div class="section-counting__number">15</div>
+          <div class="section-counting__text">award winner</div>
+        </div>
+
+        <div class="section-counting__item">
+          <div class="section-counting__number">99</div>
+          <div class="section-counting__text">cup of coffee</div>
+        </div>
+
+        <div class="section-counting__item">
+          <div class="section-counting__number">24</div>
+          <div class="section-counting__text">members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-services" id="services">
+    <div class="container">
+      <h2 class="section__title">
+        <span class="section__subtitle">We work with</span>
+        Amazing Services
+      </h2>
+
+      <div class="section__content">
+        <div class="section__item section__item--half">
+          <div class="flex-row">
+            <i class="mdi mdi-camera section-services__icon"></i>
+            <div class="section-services__content">
+              <h4 class="section-services__title">Photography</h4>
+              <p class="section-services__description">
+                Photography is the science, art and practice of creating durable images by recording light or other
+                electromagnetic radiation
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item section__item--half">
+          <div class="flex-row">
+            <i class="mdi mdi-blender section-services__icon"></i>
+            <div class="section-services__content">
+              <h4 class="section-services__title">Web Design</h4>
+              <p class="section-services__description">
+                Web design encompasses many different skills and disciplines in the production and maintenance of
+                websites.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item section__item--half">
+          <div class="flex-row">
+            <i class="mdi mdi-bookmark-plus-outline section-services__icon"></i>
+            <div class="section-services__content">
+              <h4 class="section-services__title">Creativity</h4>
+              <p class="section-services__description">
+                Creativity is a phenomenon whereby something new and somehow valuable is formed. The created item may
+                be intangible or a physical object.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item section__item--half">
+          <div class="flex-row">
+            <i class="mdi mdi-buffer section-services__icon"></i>
+            <div class="section-services__content">
+              <h4 class="section-services__title">seo</h4>
+              <p class="section-services__description">
+                Search engine optimization (SEO) is the process of affecting the visibility of a website or a web page
+                in a web search engine's unpaid results.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item section__item--half">
+          <div class="flex-row">
+            <i class="mdi mdi-desktop-mac section-services__icon"></i>
+            <div class="section-services__content">
+              <h4 class="section-services__title">Css/Html</h4>
+              <p class="section-services__description">
+                HyperText Markup Language, commonly abbreviated as HTML, is the standard markup language used to create
+                web pages.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item section__item--half">
+          <div class="flex-row">
+            <i class="mdi mdi-diamond-stone section-services__icon"></i>
+            <div class="section-services__content">
+              <h4 class="section-services__title">digital</h4>
+              <p class="section-services__description">
+                With digital signals, system noise, provided it is not too great, will not change the quantification
+                whereas with signals handled using analog processing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unique Design -->
+  <section class="section section-unique-design">
+    <div class="container">
+      <h2 class="section__title">
+        <span class="section__subtitle">For all devices</span>
+        Unique design
+      </h2>
+
+      <div class="section__content">
+        <div class="section__devices">
+          <img class="section__devices__tablet" src="assets/images/unique-design/img-1.png" alt="Mogo">
+          <img class="section__devices__mobile" src="assets/images/unique-design/img-2.png" alt="Mogo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we do -->
+  <section class="section section-what-we-do">
+    <div class="container">
+      <h2 class="section__title">
+        <span class="section__subtitle">Service</span>
+        What we do
+      </h2>
+
+      <p class="section__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+
+      <div class="section__content">
+        <div class="section__item--half">
+          <img src="assets/images/what-we-do/img-1.jpg" alt="Mogo">
+        </div>
+
+        <div class="section__item--half">
+          <div class="accordion">
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <i class="mdi mdi-camera accordion__icon"></i>
+                <span class="accordion__title"> Photography </span>
+                <i class="mdi mdi-chevron-down accordion__icon--arrow"></i>
+              </div>
+
+              <div class="accordion__content">
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <i class="mdi mdi-owl accordion__icon"></i>
+                <span class="accordion__title"> Creativity </span>
+                <i class="mdi mdi-chevron-down accordion__icon--arrow"></i>
+              </div>
+
+              <div class="accordion__content">
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <i class="mdi mdi-laptop-mac accordion__icon"></i>
+                <span class="accordion__title"> Web design </span>
+                <i class="mdi mdi-chevron-down accordion__icon--arrow"></i>
+              </div>
+
+              <div class="accordion__content">
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, eveniet ex ea voluptates ullam iure tempora ad accusamus,
+                  consequatur amet labore quia delectus omnis neque libero itaque enim earum odit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials grey -->
+  <section class="section section-testimonials section-testimonials--grey">
+    <div class="container">
+      <div class="section-testimonials__slider">
+        <ul class="section-testimonials__slider-carousel">
+          <li>
+            <div class="flex-row vertical-center">
+              <i class="mdi mdi-comment-multiple-outline section-testimonials__icon"></i>
+
+              <div class="section-testimonials__content">
+                <p class="section-testimonials__quote">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                </p>
+                <span class="section-testimonials__name">Jon Doe</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <a class="section-testimonials__arrow-next"><i class="mdi mdi-chevron-right"></i></a>
+      <a class="section-testimonials__arrow-prev"><i class="mdi mdi-chevron-left"></i></a>
+    </div>
+  </section>
+
+  <!-- Meet our team -->
+  <section class="section section-meet-our-team" id="our-team">
+    <div class="container">
+      <h2 class="section__title">
+        <span class="section__subtitle">Who we are</span>
+        Meet our team
+      </h2>
+      <p class="section__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+
+      <div class="section__content">
+        <div class="section__item">
+          <div class="section-item-wrapper">
+            <div class="overlay__wrapper">
+              <div class="overlay">
+                  <span class="overlay__content">
+                    <i class="mdi mdi-facebook overlay__icon--social-net"></i>
+                    <i class="mdi mdi-twitter overlay__icon--social-net"></i>
+                    <i class="mdi mdi-pinterest overlay__icon--social-net"></i>
+                    <i class="mdi mdi-instagram overlay__icon--social-net"></i>
+                  </span>
+                <img src="assets/images/our-team/img-3.jpg" alt="Mogo">
+              </div>
+            </div>
+
+            <div class="overlay__info">
+              <h4 class="overlay__info--name">Matthew Dix </h4>
+              <span class="overlay__info--regency">Graphic Design </span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section__item">
+          <div class="section__item-wrapper">
+            <div class="overlay__wrapper">
+              <div class="overlay">
+                  <span class="overlay__content">
+                    <i class="mdi mdi-facebook overlay__icon--social-net"></i>
+                    <i class="mdi mdi-twitter overlay__icon--social-net"></i>
+                    <i class="mdi mdi-pinterest overlay__icon--social-net"></i>
+                    <i class="mdi mdi-instagram overlay__icon--social-net"></i>
+                  </span>
+                <img src="assets/images/our-team/img-1.jpg" alt="Mogo">
+              </div>
+            </div>
+
+            <div class="overlay__info">
+              <h4 class="overlay__info--name">Christopher Cambell</h4>
+              <span class="overlay__info--regency">Branding/UX design</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section__item">
+          <div class="section__item-wrapper">
+            <div class="overlay__wrapper">
+              <div class="overlay">
+                  <span class="overlay__content">
+                    <i class="mdi mdi-facebook overlay__icon--social-net"></i>
+                    <i class="mdi mdi-twitter overlay__icon--social-net"></i>
+                    <i class="mdi mdi-pinterest overlay__icon--social-net"></i>
+                    <i class="mdi mdi-instagram overlay__icon--social-net"></i>
+                  </span>
+                <img src="assets/images/our-team/img-2.jpg" alt="Mogo">
+              </div>
+            </div>
+
+            <div class="overlay__info">
+              <h4 class="overlay__info--name">Michael Fertig </h4>
+              <span class="overlay__info--regency">Developer</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Brand -->
+  <div class="section section-brand">
+    <div class="container">
+      <div class="brand-container">
+        <img src="assets/images/brand/img-1.png" alt="Mogo" class="brand-container__image">
+        <img src="assets/images/brand/img-2.png" alt="Mogo" class="brand-container__image">
+        <img src="assets/images/brand/img-3.png" alt="Mogo" class="brand-container__image">
+        <img src="assets/images/brand/img-4.png" alt="Mogo" class="brand-container__image">
+        <img src="assets/images/brand/img-5.png" alt="Mogo" class="brand-container__image">
+        <img src="assets/images/brand/img-6.png" alt="Mogo" class="brand-container__image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <section class="section section-portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section__title">
+        <span class="section__subtitle">What we do</span>
+        some of our work
+      </h2>
+      <p class="section__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+
+
+    </div>
+
+    <div class="section__gallery">
+      <div class="section__gallery-item">
+        <a href="#">
+          <img src="assets/images/our-work/img-1.jpg" alt="Mogo">
+          <div class="section__gallery-overlay">
+            <div class="section__gallery-overlay__content">
+              <i class="mdi mdi-crown section__gallery-overlay__icon"></i>
+              <h4 class="section__gallery-overlay__title">creatively designed</h4>
+              <span class="section__gallery-overlay__description">Lorem ipsum dolor sit</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="section__gallery-item">
+        <a href="#">
+          <img src="assets/images/our-work/img-2.jpg" alt="Mogo">
+          <div class="section__gallery-overlay">
+            <div class="section__gallery-overlay__content">
+              <i class="mdi mdi-cube-outline section__gallery-overlay__icon"></i>
+              <h4 class="section__gallery-overlay__title">creatively designed</h4>
+              <span class="section__gallery-overlay__description">Lorem ipsum dolor sit</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="section__gallery-item span-2">
+        <a href="#">
+          <img src="assets/images/our-work/img-3.jpg" alt="Mogo">
+          <div class="section__gallery-overlay">
+            <div class="section__gallery-overlay__content">
+              <i class="mdi mdi-desktop-mac section__gallery-overlay__icon"></i>
+              <h4 class="section__gallery-overlay__title">creatively designed</h4>
+              <span class="section__gallery-overlay__description">Lorem ipsum dolor sit</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="section__gallery-item">
+        <a href="#">
+          <img src="assets/images/our-work/img-4.jpg" alt="Mogo">
+          <div class="section__gallery-overlay">
+            <div class="section__gallery-overlay__content">
+              <i class="mdi mdi-flower section__gallery-overlay__icon"></i>
+              <h4 class="section__gallery-overlay__title">creatively designed</h4>
+              <span class="section__gallery-overlay__description">Lorem ipsum dolor sit</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="section__gallery-item">
+        <a href="#">
+          <img src="assets/images/our-work/img-5.jpg" alt="Mogo">
+          <div class="section__gallery-overlay">
+            <div class="section__gallery-overlay__content">
+              <i class="mdi mdi-gamepad-variant section__gallery-overlay__icon"></i>
+              <h4 class="section__gallery-overlay__title">creatively designed</h4>
+              <span class="section__gallery-overlay__description">Lorem ipsum dolor sit</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="section__gallery-item">
+        <a href="#">
+          <img src="assets/images/our-work/img-6.jpg" alt="Mogo">
+          <div class="section__gallery-overlay">
+            <div class="section__gallery-overlay__content">
+              <i class="mdi mdi-gnome section__gallery-overlay__icon"></i>
+              <h4 class="section__gallery-overlay__title">creatively designed</h4>
+              <span class="section__gallery-overlay__description">Lorem ipsum dolor sit</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="section__gallery-item">
+        <a href="#">
+          <img src="assets/images/our-work/img-7.jpg" alt="Mogo">
+          <div class="section__gallery-overlay">
+            <div class="section__gallery-overlay__content">
+              <i class="mdi mdi-guitar-electric section__gallery-overlay__icon"></i>
+              <h4 class="section__gallery-overlay__title">creatively designed</h4>
+              <span class="section__gallery-overlay__description">Lorem ipsum dolor sit</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-testimonials">
+    <div class="container">
+      <div class="section-testimonials__slider">
+        <ul class="section-testimonials__slider-carousel">
+          <li>
+            <div class="flex-row vertical-center">
+              <div class="section-testimonials__avatar">
+                <img class="section-testimonials__photo" src="assets/images/testimonial/img-3.jpg" alt="Mogo">
+              </div>
+
+              <div class="section-testimonials__content">
+                <p class="section-testimonials__quote">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                </p>
+                <span class="section-testimonials__name">Joshua Earle</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <a class="section-testimonials__arrow-next"><i class="mdi mdi-chevron-right"></i></a>
+      <a class="section-testimonials__arrow-prev"><i class="mdi mdi-chevron-left"></i></a>
+    </div>
+  </section>
+
+  <!-- Happy Clients -->
+  <section class="section section-happy-clients">
+    <div class="container">
+      <h2 class="section__title">
+        <span class="section__subtitle">Happy Clients</span>
+        What people say
+      </h2>
+
+      <div class="section__content">
+        <div class="flex-row">
+          <div class="section__item--half">
+            <div class="section-happy-clients__avatar">
+              <img class="section-happy-clients__photo" src="assets/images/happy-client/img-1.jpg" alt="Mogo">
+            </div>
+
+            <div class="section-happy-clients__content">
+              <h4 class="section-happy-clients__name">Matthew Dix</h4>
+              <span class="section-happy-clients__position">Graphic Design</span>
+              <p class="section-happy-clients__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo cupiditate temporibus sapiente,
+                sint, voluptatibus tempora esse. Consectetur voluptate nihil quo nulla voluptatem dolorem harum nostrum
+              </p>
+            </div>
+          </div>
+
+          <div class="section__item--half">
+            <div class="section-happy-clients__avatar">
+              <img class="section-happy-clients__photo" src="assets/images/happy-client/img-2.jpg" alt="Mogo">
+            </div>
+
+            <div class="section-happy-clients__content">
+              <h4 class="section-happy-clients__name">Nick Karvounis</h4>
+              <span class="section-happy-clients__position">Graphic Design</span>
+              <p class="section-happy-clients__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo cupiditate temporibus sapiente,
+                sint, voluptatibus tempora esse. Consectetur voluptate nihil quo nulla voluptatem dolorem harum nostrum
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="section__item--half">
+            <div class="section-happy-clients__avatar">
+              <img class="section-happy-clients__photo" src="assets/images/happy-client/img-3.jpg" alt="Mogo">
+            </div>
+
+            <div class="section-happy-clients__content">
+              <h4 class="section-happy-clients__name">Jaelynn Castillo</h4>
+              <span class="section-happy-clients__position">Graphic Design</span>
+              <p class="section-happy-clients__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo cupiditate temporibus sapiente,
+                sint, voluptatibus tempora esse. Consectetur voluptate nihil quo nulla voluptatem dolorem harum nostrum
+              </p>
+            </div>
+          </div>
+
+          <div class="section__item--half">
+            <div class="section-happy-clients__avatar">
+              <img class="section-happy-clients__photo" src="assets/images/happy-client/img-4.jpg" alt="Mogo">
+            </div>
+
+            <div class="section-happy-clients__content">
+              <h4 class="section-happy-clients__name">Mike Petrucci</h4>
+              <span class="section-happy-clients__position">Graphic Design</span>
+              <p class="section-happy-clients__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo cupiditate temporibus sapiente,
+                sint, voluptatibus tempora esse. Consectetur voluptate nihil quo nulla voluptatem dolorem harum nostrum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section section-blog" id="blog">
+    <div class="container">
+      <h2 class="section__title">
+        <span class="section__subtitle">Our stories</span>
+        latest blog
+      </h2>
+
+      <div class="section__content">
+        <div class="section__item">
+          <div class="article">
+            <div class="article__image">
+              <a href="#"> <img src="assets/images/our-blog/img-1.jpg" alt="Mogo"> </a>
+              <div class="article__date">
+                <span class="article__date--day">15</span>
+                <span class="article__date--month">Jan</span>
+              </div>
+            </div>
+            <a href="#">
+              <h3 class="article__title">
+                Incididunt ut labore et dolore
+              </h3>
+            </a>
+            <p class="article__description">
+              Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="article__meta">
+                <span>
+                  <i class="mdi mdi-eye article__icon"></i> 1264 &nbsp;
+                </span>
+              <span>
+                  <i class="mdi mdi-comment-multiple-outline article__icon"></i> 69
+                </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item">
+          <div class="article">
+            <div class="article__image">
+              <a href="#"> <img src="assets/images/our-blog/img-2.jpg" alt="Mogo"> </a>
+              <div class="article__date">
+                <span class="article__date--day">14</span>
+                <span class="article__date--month">Jan</span>
+              </div>
+            </div>
+            <a href="#">
+              <h3 class="article__title">
+                Incididunt ut labore et dolore
+              </h3>
+            </a>
+            <p class="article__description">
+              Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="article__meta">
+                <span>
+                  <i class="mdi mdi-eye article__icon"></i> 1264 &nbsp;
+                </span>
+              <span>
+                  <i class="mdi mdi-comment-multiple-outline article__icon"></i> 69
+                </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__item">
+          <div class="article">
+            <div class="article__image">
+              <a href="#"> <img src="assets/images/our-blog/img-3.jpg" alt="Mogo"> </a>
+              <div class="article__date">
+                <span class="article__date--day">12</span>
+                <span class="article__date--month">Jan</span>
+              </div>
+            </div>
+            <a href="#">
+              <h3 class="article__title">
+                Incididunt ut labore et dolore
+              </h3>
+            </a>
+            <p class="article__description">
+              Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="article__meta">
+                <span>
+                  <i class="mdi mdi-eye article__icon"></i> 1264 &nbsp;
+                </span>
+              <span>
+                  <i class="mdi mdi-comment-multiple-outline article__icon"></i> 69
+                </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Map  -->
+  <section class="section section-map">
+    <div class="container">
+      <h2 class="section__title section__title--map">
+          <span class="section__subtitle section__subtitle--map">
+            <i class="mdi mdi-map-marker"></i>
+          </span>
+        Open map
+      </h2>
+
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+
+        <div class="third--one">
+          <div class="footer__logo">
+            MoGo
+          </div>
+
+          <p class="footer__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis ducimus mollitia, a, dignissimos
+            soluta voluptates fugit nam vitae sequi, ut quis pariatur? Numquam excepturi aliquid aut minus repudiandae
+            reprehenderit.
+          </p>
+
+          <div class="footer__followers">
+            <span>15k</span> followers
+          </div>
+
+          <div class="footer__social-networks">
+            <span class="footer__social-networks--text">Follow Us: </span>
+            <a href="#"> <i class="footer__social-networks--icon mdi mdi-facebook"></i> </a>
+            <a href="#"> <i class="footer__social-networks--icon mdi mdi-twitter"></i> </a>
+            <a href="#"> <i class="footer__social-networks--icon mdi mdi-instagram"></i> </a>
+            <a href="#"> <i class="footer__social-networks--icon mdi mdi-pinterest"></i> </a>
+            <a href="#"> <i class="footer__social-networks--icon mdi mdi-google-plus"></i> </a>
+            <a href="#"> <i class="footer__social-networks--icon mdi mdi-youtube"></i> </a>
+          </div>
+
+          <form action="#" class="footer-form">
+            <input class="footer-form__input" type="email" placeholder="Your Email...">
+              <button class="footer-form__button" type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="third--two">
+          <div class="footer__title">
+            Blogs
+          </div>
+
+          <ul class="footer__articles">
+            <li class="footer__article">
+              <a href="#"> <img src="assets/images/our-blog/img-4.jpg" alt="Mogo" class="footer__article--image"> </a>
+              <div class="footer__article--info">
+                <a href="#"><h3 class="footer__article--title"> Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
+                </a>
+                <div class="footer__article--date"> Jan 9, 2016</div>
+              </div>
+            </li>
+            <li class="footer__article">
+              <a href="#"> <img src="assets/images/our-blog/img-5.jpg" alt="Mogo" class="footer__article--image"> </a>
+              <div class="footer__article--info">
+                <a href="#"><h3 class="footer__article--title"> Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
+                </a>
+                <div class="footer__article--date"> Jan 9, 2016</div>
+              </div>
+            </li>
+            <li class="footer__article">
+              <a href="#"> <img src="assets/images/our-blog/img-6.jpg" alt="Mogo" class="footer__article--image"> </a>
+              <div class="footer__article--info">
+                <a href="#"><h3 class="footer__article--title"> Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
+                </a>
+                <div class="footer__article--date"> Jan 9, 2016</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="third--two">
+          <div class="footer__title">
+            Instagram
+          </div>
+
+          <div class="footer__gallery">
+            <img src="assets/images/instagram/img-1.jpg" alt="Mogo">
+            <img src="assets/images/instagram/img-2.jpg" alt="Mogo">
+            <img src="assets/images/instagram/img-3.jpg" alt="Mogo">
+            <img src="assets/images/instagram/img-4.jpg" alt="Mogo">
+            <img src="assets/images/instagram/img-5.jpg" alt="Mogo">
+            <img src="assets/images/instagram/img-6.jpg" alt="Mogo">
+            <img src="assets/images/instagram/img-7.jpg" alt="Mogo">
+            <img src="assets/images/instagram/img-8.jpg" alt="Mogo">
+            <img src="assets/images/instagram/img-9.jpg" alt="Mogo">
+          </div>
+
+          <a href="#" class="footer__more-photos">
+            View more photos
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer__copyright">
+        © 2016 MoGo free PSD template by
+        <a href="#"> Laaqiq </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

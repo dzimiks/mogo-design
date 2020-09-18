@@ -1,0 +1,40 @@
+// Colors
+$color-primary: #F38181 !default;
+$color-secondary: #FCE38A !default;
+$color-tertiary: #95e1d3 !default;
+$color-white: #fff !default;
+
+// Typography
+$color-grey-light-1: #ccc !default;
+$color-grey-light-2: #e5e5e5 !default;
+$color-grey-light-3: #e7e7e7 !default;
+
+$color-grey-dark-1: #333 !default;
+$color-grey-dark-2: #666 !default;
+$color-grey-dark-3: #999 !default;
+
+// Fonts
+$font-roboto: 'Roboto', sans-serif !default;
+$font-montserrat: 'Montserrat', sans-serif !default;
+$font-kaushan-script: 'Kaushan Script', cursive !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+				extra-small: 0,
+				mobile: 480px,
+				small: 576px,
+				old-mobile: 640px,
+				medium: 768px,
+				large: 992px,
+				extra-large: 1200px
+) !default;
+
+// Grid containers
+$container-max-widths: (
+				small: 540px,
+				medium: 720px,
+				large: 960px,
+				extra-large: 1140px
+) !default;
+
+$container-padding-x: 1rem !default;

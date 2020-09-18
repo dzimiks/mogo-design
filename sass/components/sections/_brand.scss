@@ -1,0 +1,26 @@
+.section-brand {
+	background-color: #f8f8f8;
+
+	.brand-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+		align-items: center;
+
+		&__image {
+			transition: all .4s;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		@include media-breakpoint-up(old-mobile) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include media-breakpoint-up(large) {
+			grid-template-columns: repeat(6, 1fr);
+		}
+	}
+}

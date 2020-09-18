@@ -1,0 +1,77 @@
+.section-happy-clients {
+	background: url("../assets/images/happy-client/bg-happy-client.jpg") no-repeat center center;
+	background-size: cover;
+
+	.flex-row {
+		flex-wrap: wrap;
+
+		@include media-breakpoint-up(medium) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	.section__item--half {
+		display: flex;
+		margin-bottom: 3rem;
+		padding-right: 1.5rem;
+
+		@include media-breakpoint-up(mobile) {
+			flex: 0 0 100%;
+		}
+
+		@include media-breakpoint-up(medium) {
+			flex: 0 0 50%;
+		}
+	}
+
+	&__avatar {
+		flex-shrink: 0;
+		width: 5rem;
+		margin-right: 1.5rem;
+
+		@include media-breakpoint-up(old-mobile) {
+			width: 8rem;
+			margin-right: 3rem;
+		}
+	}
+
+	&__photo {
+		max-width: 100%;
+		width: 100%;
+		border-radius: 50%;
+	}
+
+	&__name {
+		@include font-montserrat();
+
+		font-size: 1.4rem;
+		margin: .5rem 0 1rem;
+		color: $color-grey-dark-1;
+		text-transform: uppercase;
+	}
+
+	&__position {
+		position: relative;
+		padding-bottom: 1.2rem;
+		display: inline-block;
+		font-style: italic;
+		font-size: 1.3rem;
+		line-height: 1.7;
+		margin-bottom: 1.2rem;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 5rem;
+			height: 2px;
+			background-color: $color-primary;
+		}
+	}
+
+	&__description {
+		font-size: 1.3rem;
+		line-height: 1.7;
+	}
+}

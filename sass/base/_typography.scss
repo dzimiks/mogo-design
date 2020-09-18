@@ -1,0 +1,53 @@
+.section {
+
+	&__title {
+		@include font-montserrat();
+
+		font-weight: 700;
+		font-size: 2.5rem;
+		line-height: 1;
+		position: relative;
+		padding-bottom: 2rem;
+		margin-bottom: 3rem;
+		text-align: center;
+		color: $color-grey-dark-1;
+		text-transform: uppercase;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 5rem;
+			height: 2px;
+			background-color: $color-primary;
+			transform: translateX(-50%);
+		}
+
+		&--map {
+			color: $color-primary;
+		}
+	}
+
+	&__subtitle {
+		@include font-kaushan-script();
+
+		display: block;
+		text-transform: none;
+		font-weight: 400;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+
+		&--map {
+			font-size: 4rem;
+			color: $color-primary;
+		}
+	}
+
+	&__description {
+		text-align: center;
+		max-width: 750px;
+		margin: 0 auto 4rem;
+		font-size: 1.3rem;
+	}
+}

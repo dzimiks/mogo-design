@@ -1,0 +1,11 @@
+.section-map {
+	background: url("../assets/images/map/bg-map.jpg") no-repeat fixed;
+	background-size: cover;
+	cursor: pointer;
+
+	#map {
+		height: 30rem;
+		max-height: 0;
+		transition: max-height .5s;
+	}
+}

@@ -1,0 +1,139 @@
+.section-testimonials {
+	padding: 3rem 0;
+
+	@include media-breakpoint-up(large) {
+		padding: 6rem 0;
+	}
+
+	.container {
+		position: relative;
+	}
+
+	&--grey {
+		background-color: #f8f8f8;
+	}
+
+	&__slider {
+		margin: 0 4rem;
+		position: relative;
+		overflow: hidden;
+
+		@include media-breakpoint-up(old-mobile) {
+			margin: 0 8rem;
+		}
+
+		&-carousel {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+	}
+
+	&__icon {
+		padding: 1.6rem;
+		border: 2px solid $color-tertiary;
+		font-size: 6.5rem;
+		color: $color-tertiary;
+		margin-right: 3rem;
+		flex-shrink: 0;
+		display: none;
+
+		@include media-breakpoint-up(mobile) {
+			display: block;
+		}
+	}
+
+	&__avatar {
+		display: none;
+		width: 10rem;
+		margin-right: 1.5rem;
+		flex-shrink: 0;
+
+		@include media-breakpoint-up(mobile) {
+			display: block;
+		}
+
+		@include media-breakpoint-up(old-mobile) {
+			width: 13rem;
+			margin-right: 3.5rem;
+		}
+
+		@include media-breakpoint-up(large) {
+			width: 19rem;
+		}
+	}
+
+	&__photo {
+		border-radius: 50%;
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+		padding: 4px;
+		line-height: 1.42857143;
+		background-color: $color-white;
+		border: 1px solid #ddd;
+		transition: all .2s ease-in-out;
+	}
+
+	&__quote {
+		font-size: 1.1rem;
+		font-weight: 300;
+		font-style: italic;
+		margin-bottom: 1rem;
+		line-height: 1.7;
+
+		@include media-breakpoint-up(old-mobile) {
+			font-size: 1.3rem;
+		}
+
+		@include media-breakpoint-up(large) {
+			font-size: 1.8rem;
+		}
+	}
+
+	&__name {
+		@include font-kaushan-script();
+
+		font-size: 1.3rem;
+		position: relative;
+		padding-left: 5rem;
+
+		@include media-breakpoint-up(old-mobile) {
+			font-size: 1.8rem;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 4rem;
+			height: 2px;
+			background-color: $color-primary;
+			transform: translateY(-50%);
+		}
+	}
+
+	%slider-arrows {
+		font-size: 4rem;
+		color: $color-grey-light-1;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+	&__arrow {
+		&-next {
+			@extend %slider-arrows;
+			left: auto;
+			right: 2rem;
+		}
+
+		&-prev {
+			@extend %slider-arrows;
+		}
+	}
+}

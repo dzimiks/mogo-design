@@ -1,0 +1,178 @@
+.navbar {
+	z-index: 100;
+	position: relative;
+	background: rgba(234, 83, 83, 0.70);
+	border: none;
+	border-radius: 0;
+	min-height: 5rem;
+	margin-bottom: 2rem;
+
+	@include media-breakpoint-up(medium) {
+		background: none;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__header {
+		@include center();
+
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&__brand {
+		display: inline-block;
+		color: $color-white;
+		font-weight: 700;
+		font-size: 2rem;
+		height: 5rem;
+		padding-top: 1.5rem;
+		line-height: 2rem;
+
+		@include media-breakpoint-up(medium) {
+			padding-top: 2rem;
+		}
+
+		&:hover {
+			color: $color-secondary;
+		}
+	}
+
+	&__content {
+		align-self: stretch;
+		display: flex;
+		align-items: center;
+
+		& > * {
+			@include center();
+
+			cursor: pointer;
+			height: 100%;
+		}
+
+		a {
+			@include center();
+
+			color: $color-white;
+			font-weight: 500;
+			text-transform: uppercase;
+			padding: 1rem .5rem .5rem;
+			margin: 0 1.2rem;
+			font-size: 1.8rem;
+			border: none;
+			height: 100%;
+			border-bottom: 3px solid transparent;
+
+			&:hover {
+				color: $color-secondary;
+				background: none;
+			}
+		}
+	}
+
+	&__nav {
+		padding: 1.5rem;
+		transition: max-height .5s, padding .5s;
+
+		@media screen and (max-width: 768px) {
+			background: rgba(56, 56, 56, 0.95);
+			border-color: #464646;
+			position: absolute;
+			left: 0;
+			top: 5rem;
+			width: 100%;
+			height: auto;
+			max-height: 30rem;
+			flex-direction: column;
+			z-index: 1;
+			overflow-y: auto;
+
+			&--closed {
+				max-height: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	&__link {
+		@include center();
+
+		height: 100%;
+
+		a {
+			font-size: 1.3rem;
+
+			&:hover {
+				border-color: transparent;
+
+				@include media-breakpoint-up(medium) {
+					border-color: $color-secondary;
+				}
+			}
+		}
+
+		&.navbar__link--active {
+			a {
+				color: $color-secondary;
+				border-color: transparent;
+
+				@include media-breakpoint-up(medium) {
+					border-color: $color-secondary;
+				}
+			}
+		}
+	}
+
+	&__icon-box {
+		position: relative;
+
+		a:first-child {
+			display: flex;
+			padding: .5rem;
+
+			@include media-breakpoint-up(medium) {
+				display: none;
+			}
+		}
+	}
+
+	&__icon {
+		text-align: center;
+		height: 2.25rem;
+		width: 2.25rem;
+	}
+}
+
+.navbar--fixed .navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(241, 114, 114, 0.96);
+	z-index: 10;
+	animation: fadeInDown .5s both;
+
+	.navbar__brand {
+		padding: 1.5rem 0;
+	}
+
+	.navbar-nav > li > a {
+		border: none;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0)
+	}
+
+	100% {
+		opacity: 1;
+		transform: none
+	}
+}

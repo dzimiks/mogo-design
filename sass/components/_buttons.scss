@@ -1,0 +1,57 @@
+.btn-learn-more {
+	display: inline-block;
+	color: $color-white;
+	text-transform: uppercase;
+	padding: 1rem 2rem;
+	text-align: center;
+	border: 2px solid $color-white;
+	font-size: 1.2rem;
+	line-height: 100%;
+	background-color: transparent;
+
+	a {
+		color: $color-white;
+	}
+
+	&:hover {
+		background-color: $color-white;
+
+		a {
+			color: $color-grey-dark-1;
+		}
+	}
+}
+
+#navbar__toggler {
+	display: block;
+	font-size: 2.25rem;
+
+	@include media-breakpoint-up(medium) {
+		display: none;
+	}
+}
+
+.footer-form__button {
+	height: 4rem;
+	padding: 0 3rem;
+	color: $color-white;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.4rem;
+	background: $color-tertiary;
+	border: none;
+}
+
+#back-to-top {
+	bottom: 2rem;
+	right: 2rem;
+	color: $color-primary;
+	font-size: 3rem;
+	position: fixed;
+	border: none;
+	outline: none;
+	z-index: 999999;
+	opacity: 0;
+	cursor: pointer;
+	transition: opacity .5s;
+}

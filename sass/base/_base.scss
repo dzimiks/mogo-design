@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 50%;
+	scroll-behavior: smooth;
+
+	@include media-breakpoint-up(extra-large) {
+		font-size: 62.5%;
+	}
+}
+
+body {
+	@include font-roboto();
+
+	font-weight: 400;
+	color: $color-grey-dark-3;
+	background-color: $color-white;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	transition: all .3s ease-in-out;
+
+	&:hover {
+		color: $color-grey-dark-2;
+		text-decoration: none;
+	}
+
+	&:active {
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.vertical-stretch {
+	align-items: stretch;
+}
+
+.vertical-center {
+	align-items: center;
+}
