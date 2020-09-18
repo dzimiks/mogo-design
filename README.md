@@ -1,5 +1,7 @@
 # MoGo Design
 
+A vanilla JS implementation of the MoGo design. This project was a part of [Grid Dynamics](https://www.griddynamics.com) internship.
+
 ## Setup
 
 Install **live-server** globally by running command: `npm install -g live-server`.  
